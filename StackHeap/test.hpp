@@ -1,3 +1,5 @@
+#ifndef TEST
+#define TEST
 #include <iostream>
 using namespace std;
 
@@ -12,3 +14,5 @@ class Test {
         static int counter;
         static Ape* list;
 };
+
+#endif
