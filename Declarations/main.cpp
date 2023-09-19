@@ -1,6 +1,5 @@
-#include "main.hpp"
+#include "say.hpp"
 #include <iostream>
-using namespace std;
 
 int main() {
     say(3);
@@ -19,7 +18,7 @@ void say(int number)
 }
 
 void sayEven(int number) {
-    cout << number << " is even." << endl;
+    std::cout << number << " is even." << std::endl;
 
     if (number > 0)
     {
@@ -28,7 +27,7 @@ void sayEven(int number) {
 }
 
 void sayOdd(int number) {
-    cout << number << " is odd." << endl;
+    std::cout << number << " is odd." << std::endl;
 
     if (number > 0) {
         sayEven(number - 1);

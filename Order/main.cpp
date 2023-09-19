@@ -1,11 +1,10 @@
-#include "main.hpp"
+#include "hi.hpp"
 #include <iostream>
-using namespace std;
 
 int main() {
     hi();
 }
 
 void hi() {
-    cout << "Hello, world!" << endl;
+    std::cout << "Hello, world!" << std::endl;
 }
