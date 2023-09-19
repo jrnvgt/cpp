@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hi.cpp">
+    <ClCompile Include="big-digits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hi.hpp">
+    <ClInclude Include="numbers.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

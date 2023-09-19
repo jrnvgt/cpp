@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hi.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hi.hpp">
+    <ClInclude Include="week.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

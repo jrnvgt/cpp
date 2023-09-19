@@ -1,3 +1,6 @@
+#ifndef APE
+#define APE
+
 class Ape {
     public:
         void climb() {}
@@ -6,3 +9,5 @@ class Ape {
         char* name;
         double weight;
 };
+
+#endif
