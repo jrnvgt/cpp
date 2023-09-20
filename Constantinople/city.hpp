@@ -4,7 +4,7 @@
 
 class City {
     public:
-        City(const std::string& name, int population) : name{ name }, population{ population } {};
+        City(const std::string& name, int population) : name{ name }, population{ population } {}
 
         const std::string& getName() const;
         void setName(const std::string& name);

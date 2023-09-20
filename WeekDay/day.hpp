@@ -4,7 +4,7 @@
 
 class Day {
     public:
-        Day(std::string name, Week* week) : name{ name }, week{ week } {};
+        Day(std::string name, Week* week) : name{ name }, week{ week } {}
         std::string& getName() { return name; }
         Week* getWeek() { return week; }
     private:
