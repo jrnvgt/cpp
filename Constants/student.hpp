@@ -3,7 +3,7 @@
 
 class Student {
     public:
-        Student(int number, int age) : number{ number }, age{ age } {};
+        Student(int number, int age) : number{ number }, age{ age } {}
         
         int getNumber() const;
         void setNumber(int number);

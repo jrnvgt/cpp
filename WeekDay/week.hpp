@@ -3,7 +3,7 @@
 
 class Week {
     public:
-        Week(int number) : number{ number } {};
+        Week(int number) : number{ number } {}
         int getNumber() { return number; }
     private:
         int number;
