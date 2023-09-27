@@ -33,12 +33,13 @@ int main() {
 }
 
 double calculate(double number1, double number2) {
-    double* numbers = new double[1000];
+    double* numbers = nullptr;
     double result = NULL;
 
     try {
         if (number2 == 0) { throw std::runtime_error("ERROR: divide by zero!"); }
 
+        numbers = new double[1000];
         result = number1 / number2;
 
         delete[] numbers;
