@@ -1,7 +1,8 @@
 #include "vector.hpp"
+#include <cstddef>
 #include <utility>
 
-Vector::Vector(size_t capacity) : array{ new int[capacity] }, capacity{ capacity }, used{ 0 } {}
+Vector::Vector(std::size_t capacity) : array{ new int[capacity] }, capacity{ capacity }, used{ 0 } {}
 
 Vector::~Vector() {
     delete[] array;
@@ -34,15 +35,15 @@ Vector& Vector::operator=(Vector&& source) noexcept {
     return *this;
 }
 
-size_t Vector::getCapacity() const {
+std::size_t Vector::getCapacity() const {
     return capacity;
 }
 
-size_t Vector::getSize() const {
+std::size_t Vector::getSize() const {
     return used;
 }
 
-int Vector::getIndex(size_t index) const {
+int Vector::getIndex(std::size_t index) const {
     return array[index];
 }
 
