@@ -1,5 +1,6 @@
 #include "city.hpp"
 #include <iostream>
+#include <string>
 
 int main() {
     City* capital = new City{ "Amsterdam", 821752 };

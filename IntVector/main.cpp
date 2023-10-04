@@ -1,5 +1,7 @@
 #include "vector.hpp"
+#include <cstddef>
 #include <iostream>
+#include <utility>
 
 int main() {
     Vector vector1{ 10 };
@@ -21,7 +23,7 @@ void describe(const Vector& vector) {
     std::cout << "Capacity: " << vector.getCapacity() << std::endl;
     std::cout << "Size: " << vector.getSize() << std::endl;
 
-    for (size_t i = 0; i < vector.getSize(); i++) {
+    for (std::size_t i = 0; i < vector.getSize(); i++) {
         std::cout << "Element " << i << ": " << vector.getIndex(i) << std::endl;
     }
 }
