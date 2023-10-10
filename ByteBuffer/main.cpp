@@ -18,7 +18,7 @@ void copyStringWithIndex(const std::string& text, std::vector<char>& buffer) {
     const char* source = text.c_str();
     char* destination = buffer.data();
 
-    for (int i = 0; i < text.length(); i++) {
+    for (int i = 0; i < text.length(); ++i) {
         destination[i] = source[i];
     }
 
@@ -31,8 +31,8 @@ void copyStringWithPointers(const std::string& text, std::vector<char>& buffer) 
 
     while (*source) {
         *destination = *source;
-        source++;
-        destination++;
+        ++source;
+        ++destination;
     }
 
     *destination = 0;
