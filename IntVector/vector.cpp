@@ -9,7 +9,7 @@ Vector::~Vector() {
 }
 
 Vector::Vector(const Vector& source) : array{ new int[source.capacity] }, capacity{ source.capacity }, used{ source.used } {
-    for (int i = 0; i < capacity; i++) {
+    for (int i = 0; i < capacity; ++i) {
         array[i] = source.array[i];
     }
 }
@@ -50,6 +50,6 @@ int Vector::getIndex(std::size_t index) const {
 void Vector::pushBack(int value) {
     if (used < capacity) {
         array[used] = value;
-        used++;
+        ++used;
     }
 }

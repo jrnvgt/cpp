@@ -80,11 +80,11 @@ void write(int number) {
     while (number) {
         digits[length] = number % 10;
         number /= 10;
-        length++;
+        ++length;
     }
 
-    for (int i = 0; i < 5; i++) {
-        for (int j = length - 1; j >= 0; j--) {
+    for (int i = 0; i < 5; ++i) {
+        for (int j = length - 1; j >= 0; --j) {
             std::cout << bigDigits[digits[j]][i] << " ";
         }
 

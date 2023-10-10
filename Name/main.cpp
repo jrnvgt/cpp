@@ -4,7 +4,7 @@
 int main() {
     char* name = getName();
 
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 6; ++i) {
         std::cout << name[i];
     }
 
@@ -19,7 +19,7 @@ char* getName() {
 
     char* result = new char[length];
 
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; ++i) {
         result[i] = name[i];
     }
 
