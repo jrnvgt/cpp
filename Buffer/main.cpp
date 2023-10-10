@@ -12,8 +12,8 @@ int main() {
 void copyString(char* from, char* to) {
     while (*from) {
         *to = *from;
-        from++;
-        to++;
+        ++from;
+        ++to;
     }
 
     *to = 0;

@@ -13,8 +13,8 @@ int stringLength(char* word) {
     int result = 0;
 
     while (*word) {
-        result++;
-        word++;
+        ++word;
+        ++result;
     }
 
     return result;
@@ -24,11 +24,11 @@ void notSafe() {
     char lowercase[17];
     char uppercase[17];
 
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < 16; ++i) {
         lowercase[i] = 'l' + i;
     }
 
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < 16; ++i) {
         uppercase[i] = 'U' + i;
     }
 
