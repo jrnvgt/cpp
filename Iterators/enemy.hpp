@@ -13,7 +13,7 @@ class Enemy {
         int healthPoints;
 };
 
-template <typename I> void showEnemies(I begin, I end) {
+template<typename I> void showEnemies(I begin, I end) {
     while (begin != end) {
         if (begin->getHealthPoints() >= 30) {
             std::cout << begin->getName() << std::endl;
