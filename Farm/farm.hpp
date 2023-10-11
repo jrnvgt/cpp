@@ -9,7 +9,7 @@
 
 class Farm {
     public:
-        template <typename T, typename... Args> void addAnimal(Args &&... args) {
+        template<typename T, typename... Args> void addAnimal(Args &&... args) {
             animals.push_back(std::make_unique<T>(std::forward<Args>(args)...));
         }
 
